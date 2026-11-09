@@ -1,1 +1,262 @@
-:root{color-scheme:light;--ink:#242424;--muted:#747474;--gap:32px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:white;color:var(--ink);font:14px/1.5 Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}a:hover,a:focus-visible{text-decoration:underline;text-underline-offset:4px}.site-header{max-width:1440px;margin:auto;padding:43px 54px 75px;display:flex;justify-content:space-between;gap:24px;align-items:baseline}.site-name{font-size:20px;font-weight:400;letter-spacing:-.02em}.site-header nav{display:flex;gap:30px;font-size:13px}.site-header nav a[aria-current=page]{text-decoration:underline;text-underline-offset:5px}main{max-width:1440px;margin:auto;padding:0 54px;min-height:55vh}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px var(--gap)}.artwork{min-width:0}.artwork button{border:0;background:transparent;padding:0;width:100%;cursor:zoom-in;display:block}.artwork img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#f7f7f7}.artwork .details{font-size:12px;margin-top:12px;line-height:1.7}.artwork .details .secondary{color:var(--muted)}.text-page{max-width:620px;line-height:1.85;font-size:14px}.text-page h1{font-size:18px;font-weight:400;margin:0 0 26px}.text-page p{margin:0 0 16px}.text-page a{text-decoration:underline;text-underline-offset:3px}footer{max-width:1440px;margin:100px auto 0;padding:0 54px 35px;font-size:11px;color:var(--muted)}dialog{position:fixed;inset:0;border:0;padding:45px 72px;background:#fff;max-width:none;max-height:none;width:100vw;height:100vh}dialog::backdrop{background:rgba(255,255,255,.96)}.viewer-content{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}.viewer-content img{max-width:100%;max-height:calc(100vh - 145px);object-fit:contain}.viewer-content p{font-size:12px;color:var(--muted);margin:0;text-align:center}dialog button{position:absolute;border:0;background:transparent;font:22px Arial;cursor:pointer;color:var(--ink);padding:12px}.close{right:22px;top:16px}.previous{left:15px;top:50%}.next{right:15px;top:50%}@media(max-width:700px){.site-header{padding:25px 22px 45px;display:block}.site-name{display:block;margin-bottom:19px}.site-header nav{gap:22px;flex-wrap:wrap}main{padding:0 22px}.gallery{grid-template-columns:1fr;gap:42px}.artwork img{aspect-ratio:auto}footer{padding:0 22px 25px;margin-top:70px}dialog{padding:65px 35px}.previous{left:0}.next{right:0}}
+
+:root {
+  color-scheme: light;
+  --ink: #242424;
+  --muted: #747474;
+  --gap: 32px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: var(--ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* HEADER */
+
+.site-header {
+  max-width: 1440px;
+  margin: auto;
+  padding: 43px 54px 75px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 30px;
+  font-size: 13px;
+}
+
+.site-header nav a[aria-current=page] {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* MAIN CONTENT */
+
+main {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 54px;
+  min-height: 55vh;
+}
+
+/* ARTWORK GALLERY */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 56px var(--gap);
+}
+
+.artwork {
+  min-width: 0;
+}
+
+.artwork button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+  cursor: zoom-in;
+  display: block;
+}
+
+.artwork img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: contain;
+  background: #f7f7f7;
+}
+
+.artwork .details {
+  font-size: 12px;
+  margin-top: 12px;
+  line-height: 1.7;
+}
+
+.artwork .details .secondary {
+  color: var(--muted);
+}
+
+/* ABOUT, CV, CONTACT */
+
+.text-page {
+  max-width: 620px;
+  line-height: 1.85;
+  font-size: 14px;
+}
+
+.text-page h1 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 26px;
+}
+
+.text-page p {
+  margin: 0 0 16px;
+}
+
+.text-page a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* FOOTER */
+
+footer {
+  max-width: 1440px;
+  margin: 100px auto 0;
+  padding: 0 54px 35px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ARTWORK IMAGE VIEWER */
+
+dialog {
+  position: fixed;
+  inset: 0;
+  border: 0;
+  padding: 45px 72px;
+  background: #fff;
+  max-width: none;
+  max-height: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+dialog::backdrop {
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.viewer-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.viewer-content img {
+  max-width: 100%;
+  max-height: calc(100vh - 145px);
+  object-fit: contain;
+}
+
+.viewer-content p {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0;
+  text-align: center;
+}
+
+dialog button {
+  position: absolute;
+  border: 0;
+  background: transparent;
+  font: 22px Arial;
+  cursor: pointer;
+  color: var(--ink);
+  padding: 12px;
+}
+
+.close {
+  right: 22px;
+  top: 16px;
+}
+
+.previous {
+  left: 15px;
+  top: 50%;
+}
+
+.next {
+  right: 15px;
+  top: 50%;
+}
+
+/* MOBILE LAYOUT */
+
+@media (max-width: 700px) {
+  .site-header {
+    padding: 25px 22px 45px;
+    display: block;
+  }
+
+  .site-name {
+    display: block;
+    margin-bottom: 19px;
+  }
+
+  .site-header nav {
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  main {
+    padding: 0 22px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+
+  .artwork img {
+    aspect-ratio: auto;
+  }
+
+  footer {
+    padding: 0 22px 25px;
+    margin-top: 70px;
+  }
+
+  dialog {
+    padding: 65px 35px;
+  }
+
+  .previous {
+    left: 0;
+  }
+
+  .next {
+    right: 0;
+  }
+}
