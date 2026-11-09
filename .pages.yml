@@ -1,0 +1,30 @@
+media:
+  input: cindy-wang-portfolio/images
+  output: /images
+
+content:
+  - name: artworks
+    label: Artworks
+    type: collection
+    path: cindy-wang-portfolio/artworks
+    format: json
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: year
+        label: Year
+        type: string
+      - name: medium
+        label: Medium
+        type: string
+      - name: dimensions
+        label: Dimensions
+        type: string
+      - name: image
+        label: Artwork Image
+        type: image
+      - name: description
+        label: Description
+        type: text
