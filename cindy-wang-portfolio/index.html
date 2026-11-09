@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cindy Wang — paintings and drawings.">
+  <title>Cindy Wang — Work</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-name" href="#work">Cindy Wang</a>
+    <nav aria-label="Main navigation">
+      <a href="#work" data-page="work">Work</a>
+      <a href="#about" data-page="about">About</a>
+      <a href="#cv" data-page="cv">CV</a>
+      <a href="#contact" data-page="contact">Contact</a>
+    </nav>
+  </header>
+  <main id="content" tabindex="-1"></main>
+  <footer>© <span id="year"></span> Cindy Wang</footer>
+  <dialog id="viewer" aria-label="Artwork viewer">
+    <button class="close" aria-label="Close image">×</button>
+    <button class="previous" aria-label="Previous artwork">←</button>
+    <div class="viewer-content"><img id="viewer-image" alt=""><p id="viewer-caption"></p></div>
+    <button class="next" aria-label="Next artwork">→</button>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
