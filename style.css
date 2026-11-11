@@ -77,11 +77,14 @@ main {
 /* ARTWORK GALLERY */
 
 
+
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
   gap: 56px;
-  max-width: 650px;
+  max-width: 550px;
+  margin-left: 0;
+  margin-right: auto;
 }
 
 .artwork {
@@ -261,4 +264,38 @@ dialog button {
   .next {
     right: 0;
   }
+}
+
+/* WORK INDEX */
+
+.work-index {
+  margin-bottom: 45px;
+}
+
+.work-index h1 {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin: 0 0 15px;
+}
+
+.year-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  font-size: 15px;
+}
+
+.year-nav a {
+  color: #999999;
+  text-decoration: none;
+}
+
+.year-nav a:hover {
+  color: #242424;
+}
+
+.year-nav span {
+  color: #242424;
 }
