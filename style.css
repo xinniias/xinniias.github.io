@@ -299,3 +299,13 @@ dialog button {
 .year-nav span {
   color: #242424;
 }
+
+/* Hide year navigation on other pages */
+
+body:not(:has(#work-index)) .work-index {
+  display: none;
+}
+
+body:has(#content .text-page) .work-index {
+  display: none;
+}
