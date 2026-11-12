@@ -6,39 +6,23 @@
 
 const artworks = [
   {
-    title: "Untitled 01",
-    year: "2026",
-    medium: "Watercolor on canvas",
-    image: "images/placeholder-1.svg"
+    title: "",
+    year: "2024",
+    medium: "",
+    image: "images/2024/guitar.jpg"
   },
   {
-    title: "Untitled 02",
-    year: "2026",
-    medium: "Watercolor on canvas",
-    image: "images/placeholder-2.svg"
+    title: "",
+    year: "2024",
+    medium: "",
+    image: "images/2024/umbrella.jpg"
   },
   {
-    title: "Untitled 03",
-    year: "2026",
-    medium: "Watercolor on canvas",
-    image: "images/placeholder-3.svg"
-  },
-  {
-    title: "Untitled 04",
-    year: "2026",
-    medium: "Watercolor on canvas",
-    image: "images/placeholder-4.svg"
+    title: "",
+    year: "2024",
+    medium: "",
+    image: "images/2024/witch.jpg"
   }
-
-  // Add your 2024 paintings here later.
-  // Example:
-  //
-  // ,{
-  //   title: "Fig Study",
-  //   year: "2024",
-  //   medium: "Watercolor on paper",
-  //   image: "images/2024/fig-study.jpg"
-  // }
 ];
 
 const main = document.querySelector("#content");
