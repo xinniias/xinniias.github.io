@@ -309,3 +309,72 @@ body:not(:has(#work-index)) .work-index {
 body:has(#content .text-page) .work-index {
   display: none;
 }
+
+/* WEBSITE TEXT COLORS */
+
+:root {
+  --ink: #1F3A60;
+  --muted: #1F3A60;
+}
+
+/* All text */
+
+body {
+  color: #1F3A60;
+}
+
+/* All links */
+
+a,
+a:visited {
+  color: #1F3A60;
+}
+
+/* Hover, click, and keyboard focus */
+
+a:hover,
+a:active,
+a:focus-visible {
+  color: #000000;
+}
+
+/* Navigation links */
+
+.site-header nav a[aria-current="page"] {
+  color: #000000;
+}
+
+/* Year navigation */
+
+.year-nav a,
+.year-nav span {
+  color: #1F3A60;
+}
+
+.year-nav a:hover,
+.year-nav a:active,
+.year-nav a:focus-visible {
+  color: #000000;
+}
+
+/* Artwork descriptions and secondary text */
+
+.artwork .details,
+.artwork .details .secondary,
+.text-page,
+footer,
+.viewer-content p {
+  color: #1F3A60;
+}
+
+/* Artwork viewer buttons */
+
+dialog button {
+  color: #1F3A60;
+}
+
+dialog button:hover,
+dialog button:active {
+  color: #000000;
+}
+
