@@ -17,12 +17,25 @@ const artworks = [
     medium: "",
     image: "images/2024/umbrella.jpg"
   },
-  {
-    title: "",
-    year: "2024",
-    medium: "",
-    image: "images/2024/witch.jpg"
-  }
+
+{
+  title: "",
+  year: "2024",
+  medium: "",
+  image: "images/2024/witch.jpg"
+},
+{
+  title: "",
+  year: "2024",
+  medium: "",
+  image: "images/2024/midwave 2.jpg"
+},
+{
+  title: "",
+  year: "2024",
+  medium: "",
+  image: "images/2024/midwave 1.jpg"
+}
 ];
 
 const main = document.querySelector("#content");
