@@ -126,12 +126,14 @@ function renderGallery() {
             >
           </button>
 
-          <div class="details">
-            ${escapeHtml(a.title)}, ${escapeHtml(a.year)}
-            <div class="secondary">
-              ${escapeHtml(a.medium)}
+          ${a.year === "2024" ? "" : `
+            <div class="details">
+              ${escapeHtml(a.title)}, ${escapeHtml(a.year)}
+              <div class="secondary">
+                ${escapeHtml(a.medium)}
+              </div>
             </div>
-          </div>
+          `}
         </article>
       `).join("")}
     </section>`;
