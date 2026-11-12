@@ -1,4 +1,7 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+
 :root {
   color-scheme: light;
   --ink: #242424;
@@ -18,10 +21,10 @@ body {
   margin: 0;
   background: white;
   color: var(--ink);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.7;
   letter-spacing: -0.02em;
 }
 
@@ -377,4 +380,43 @@ dialog button:hover,
 dialog button:active {
   color: #000000;
 }
+
+/* ARCHIVAL TYPOGRAPHY */
+
+.site-name {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.site-header nav {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+}
+
+.work-index h1 {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+.year-nav {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+}
+
+.artwork .details,
+.text-page,
+footer,
+.viewer-content p {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.text-page h1 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 
