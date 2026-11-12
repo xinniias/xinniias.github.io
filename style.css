@@ -104,9 +104,9 @@ main {
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4/3;
+  aspect-ratio: auto;
   object-fit: contain;
-  background: #f7f7f7;
+  background: transparent;
 }
 
 .artwork .details {
